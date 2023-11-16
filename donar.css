@@ -74,6 +74,18 @@ main {
     justify-content: space-between;
   }
   
+.boton {
+    background-color: #000000;
+    color: white;
+    font-size: 1.25rem;
+    border: 3px solid white ;
+    margin: 0 auto;
+    padding: 10px;
+    width: 100px; 
+    height: 50px;
+    cursor: pointer; 
+}
+
   .elemento {
     border: 6px solid #000000;
     padding: 10px;
@@ -195,4 +207,37 @@ footer p {
     font-size: 1.25rem;
     font-weight: bolder;
     margin-left: 0.5%;
+}
+
+
+/* Agrega la animación deseada */
+@keyframes celebracion {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.2);
+        background-color: #FFD700; /* Amarillo */
+        color: black; /* Texto negro */
+    }
+    50% {
+        transform: scale(1);
+        background-color: #008000; /* Verde */
+        color: white; /* Texto blanco */
+    }
+    75% {
+        transform: scale(1.2);
+        background-color: #FFD700; /* Amarillo */
+        color: black; /* Texto negro */
+    }
+    100% {
+        transform: scale(1);
+        background-color: #008000; /* Verde */
+        color: white; /* Texto blanco */
+    }
+}
+
+/* Aplica la animación cuando se agrega la clase "celebracion" */
+.boton.celebracion {
+    animation: celebracion 1s ease-in-out;
 }
