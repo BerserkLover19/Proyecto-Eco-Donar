@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+
+html {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    height: auto;
+    z-index: 2;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Ocupa el espacio restante */
+    text-align: center;
+}
+
+
+#Textoyborde {
+
+    text-align: justify;
+    margin: 40px auto;
+    padding: 20px 10px 20px;
+    border: 2px solid black;
+    max-width: 600px;
+    background-color: #009E3F;
+    color: #FFFF;
+    border-radius: 20px;
+}
+
+#Textoyborde p {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    
+    padding: 10px 20px 10px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.form-content {
+    width: 100%;
+    max-width: 450px;
+    background-color: #2c2f35;
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 25px;
+
+}
+
+.form-content h1 {
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #FFFF;
+    position: relative;
+
+}
+.form-content h1 ::after {
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #04bd7d;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-filed {
+    background-color: #009E3F;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    transition: max-height 05s;
+    overflow: hidden
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding: 18px 15px;
+    color: #1e1e1e;
+}
+
+input::placeholder {
+    color: rgb(255, 255, 255)
+
+}
+
+
+
+.input-filed i {
+    margin-left: 15px;
+    color: #FFFFFF;
+
+}
+
+form p {
+    color: #FFFFFF;
+    text-align: left;
+}
+.btn-field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-field button {
+    flex-basis: 40%;
+    font-size: 16px;
+    background-color: #1e1e1e;
+    color: #FFFFFFFF;
+    height: 40px;
+    border: solid white 4px;
+    border-color: white;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 01s;
+
+
+}
+.input-group {
+    height:  250px;
+
+}
+
+.btn-field button.disable {
+    background-color: #FFFFFFFF;
+    color: #1e1e1e;
+    justify-content: center;
+}
+
+footer {
+    width: 100%;
+    margin-top: auto;
+    background-color: #009E3F;
+}
+
+.navbar ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: #009E3F;
+}
+
+.navbar li {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-logo {
+    flex: 1;
+    font-size: 2rem;
+    user-select: none;
+    font-weight: bolder;
+    color: white;
+}
+
+.monito {
+    width: 10%;
+}
+
+.navbar-icono {
+    color: white;
+    font-size: 2rem;
+    display: none;
+}
+
+.navbar-links {
+    border-radius: 7%;
+    font-size: 1.25rem;
+}
+
+.navbar-links:hover {
+    background-color: white;
+    transition: 0.5s;
+}
+
+.navbar-links:hover a {
+    color: #009E3F;
+    transition: 0.5s;
+}
+
+@media (max-width: 640px) {
+    .navbar ul {
+        flex-wrap: wrap;
+    }
+    .navbar-icono {
+        display: block;
+    }
+    .navbar-links {
+        border-radius: 0%;
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+    .navbar.active .navbar-links {
+        display: block;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    footer p {
+        display: none;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem; 
+    background-color: #009E3F;
+    color: white;
+}
+
+.textoFooter {
+    text-align: center;
+}
+
+footer img {
+    width: 7rem;
+    height: auto;
+    margin-right: 0.5%;
+}
+
+footer p {
+    font-size: 1.25rem;
+    font-weight: bolder;
+    margin-left: 0.5%;
+}
