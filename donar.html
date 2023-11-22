@@ -12,66 +12,82 @@
 <body>
   <header>
     <nav class="navbar">
-        <ul>
-          <li class="navbar-logo"><img class="monito" src="img/monito.png" alt=""></li>
-          <li class="navbar-icono"><i class="fas fa-bars"></i></li>
-          <li class="navbar-links"><a href="index.html">Inicio</a></li>
-          <li class="navbar-links"><a href="nuestraayuda.html">Nuestra Ayuda</a></li>
-          <li class="navbar-links"><a href="contacto.html">Contacto</a></li>
-          <li class="navbar-links"><a href="donar.html">Donar</a></li>
-        </ul>
-    </nav> 
-</header>
-<main>
-  <section>
+      <ul>
+        <li class="navbar-logo"><img class="monito" src="img/monito.png" alt=""></li>
+        <li class="navbar-icono"><i class="fas fa-bars"></i></li>
+        <li class="navbar-links"><a href="index.html">Inicio</a></li>
+        <li class="navbar-links"><a href="nuestraayuda.html">Nuestra Ayuda</a></li>
+        <li class="navbar-links"><a href="contacto.html">Contacto</a></li>
+        <li class="navbar-links"><a href="donar.html">Donar</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
       <div class="texto">
-        <p class="parrafo2" >En Proyecto Eco-Donar, optamos por la flexibilidad y la
+        <p class="parrafo2">En Proyecto Eco-Donar, optamos por la flexibilidad y la
           personalización. Puedes elegir tu propia aventura de donación.
           ¿Quieres optar por uno de nuestros montos predeterminados,
           cuidadosamente seleccionados para maximizar el impacto?
           ¡Perfecto! ¿O prefieres establecer tu propio monto, personalizando
           tu contribución a la medida de tu generosidad? ¡También puedes
           hacerlo!
-          
+
           Además, tú decides la frecuencia de tu apoyo. Puedes realizar una
           donación única para marcar una diferencia inmediata o
           comprometerte mensualmente para un impacto sostenible a largo
           plazo. 
-          
+
           Únete a nosotros y haz tu donación a tu manera. Tu contribución
           cuenta, sin importar el camino que elijas. ¡Gracias por ser parte de
           nuestro compromiso con la conservación!</p>
-      </div>             
+      </div>
     </section>
     <section>
-    <div class="texto">
-      <p class="parrafo3">Valor de la donación:</p>
-      <div class="lista">
-        <div class="fila">
-          <div class="elemento">$ 5 USD</div>
-          <div class="elemento">$ 10 USD</div>
-          <div class="elemento">$ 25 USD</div>
+      <div class="contenedor">
+        <p class="subtitulo">Valor de la donación:</p>
+        <div class="lista">
+          <div class="fila">
+            <div class="elemento botonDonacion">$ 5 USD</div>
+            <div class="elemento botonDonacion">$ 10 USD</div>
+            <div class="elemento botonDonacion">$ 25 USD</div>
+          </div>
+          <div class="fila">
+            <div class="elemento botonDonacion">$ 50 USD</div>
+            <div class="elemento botonDonacion">$ 100 USD</div>
+            <div class="elemento botonDonacion">
+              <input type="number" id="customDonation" placeholder="$ 0.00 USD" class="customDonationInput">
+            </div>
+          </div>
+          <br>
+          <div class="opciones">
+            <label class="opcionDonacion">
+              <input type="radio" name="tipoDonacion" value="unica"> Donación Única
+              <span class="checkmark"></span>
+            </label>
+            <label class="opcionDonacion">
+              <input type="radio" name="tipoDonacion" value="mensual"> Donación Mensual
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div>
+            <button class="boton" onclick="celebrar()">Enviar</button>
+          </div>
         </div>
-        <div class="fila">
-          <div class="elemento">$ 50 USD</div>
-          <div class="elemento">$ 100 USD</div>
-          <div class="elemento">$ 0.00</div>
-        </div>
-        <div class="fila">
-          <div class="">Elemento 7</div>
-          <div class="">Elemento 8</div>
-          <div class="">Elemento 9</div>
-        </div>
-        <br>
-        <button class="boton" onclick="celebrar()">Enviar</button>
       </div>
-    </div>             
-  </section>
-</main>
-<footer>
-    <a href="https://nahuelistellato.github.io/1erEntregable/index.html" target="_blank">Grupo 9</a>
+    </section>
+  </main>
+  <footer>
+    <a class="link" href="https://nahuelistellato.github.io/1erEntregable/index.html" target="_blank">Grupo 9</a>
     <p class="textoFooter">Trabajo Grupal | Materia Diseño y Desarrollo Web<br>Santino Bertoia - Nahuel Stellato - Lautaro Guardia - Matias Cristaldo</p>
     <a href="https://www.uade.edu.ar" target="_blank"><img src="img\logo.png" alt="Logo UADE"></a>
-</footer>
+    <div class="overlay" id="overlay">
+      <div class="popup" id="popup">
+        <h2 class="texto_popup">¡Gracias por donar!</h2>
+        <p class="texto_popup">Nos aseguraremos de usar tu aporte de la mejor manera posible para favorecer a los bosques nativos argentinos.</p>
+        <button onclick="cerrarPopup()">Cerrar</button>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

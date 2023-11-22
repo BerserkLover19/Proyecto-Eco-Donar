@@ -220,6 +220,11 @@ footer {
     transition: 0.5s;
 }
 
+.link {
+    color: white;
+    font-size: 2rem;
+}
+
 @media (max-width: 640px) {
     .navbar ul {
         flex-wrap: wrap;
@@ -237,11 +242,21 @@ footer {
         display: block;
     }
 
+    .texto {
+        margin: 20px;
+        margin-top: 200px;
+        margin-bottom: 100px;
+        font-size: 1.5rem;
+    }
+
     footer {
         flex-direction: column;
         text-align: center;
     }
     footer p {
+        display: none;
+    }
+    .link {
         display: none;
     }
 }
