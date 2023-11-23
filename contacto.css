@@ -41,10 +41,12 @@ main {
     margin: 40px auto;
     padding: 20px 10px 20px;
     border: 2px solid black;
-    max-width: 600px;
+    max-width: 1200px;
+    font-size: 1.5rem;
     background-color: #009E3F;
     color: #FFFF;
     border-radius: 20px;
+    font-weight: bold;
 }
 
 #Textoyborde p {
@@ -260,6 +262,19 @@ footer {
     }
     .link {
         display: none;
+    }
+
+    #Textoyborde {
+
+        text-align: justify;
+        margin: 40px auto;
+        padding: 20px 10px 20px;
+        border: 2px solid black;
+        max-width: 600px;
+        background-color: #009E3F;
+        color: #FFFF;
+        border-radius: 20px;
+        font-weight: bold;
     }
 }
 
