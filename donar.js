@@ -1,9 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
+    const iconoButton = document.querySelector(".navbar-icono");
+    const navbar = document.querySelector(".navbar");
     const botonesDonacion = document.querySelectorAll('.botonDonacion');
     const customDonationInput = document.getElementById('customDonation');
     const tipoDonacionRadios = document.querySelectorAll('input[name="tipoDonacion"]');
     const overlay = document.getElementById('overlay');
 
+    function toggleNavbarLinks() {
+        navbar.classList.toggle("active");
+    }
+    
     function toggleSeleccion(event) {
         botonesDonacion.forEach(boton => {
             boton.classList.remove('seleccionado');
@@ -71,4 +77,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const cerrarButton = document.querySelector('#popup button');
     cerrarButton.addEventListener('click', cerrarPopup);
+
+    iconoButton.addEventListener("click", toggleNavbarLinks);
 });
