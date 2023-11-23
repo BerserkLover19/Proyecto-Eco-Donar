@@ -30,26 +30,29 @@
         <div class="form-content">
             <h1 id="title">Contactanos</h1>
            
-        <form>
+        <form method="POST" action="procesar.php">
             <div class="input-group">
                 <div class="input-filed">
                     <i class="fa-solid fa-user"></i>
-                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Nombre" id="Nombre">
 
                 </div>
                 <div class="input-filed">
                     <i class="fa-solid fa-user"></i>
-                    <input type="text2" placeholder="Apellido">
+                    <input type="text2" placeholder="Apellido" id="Apellido">
                 </div>
                 <div class="input-filed">
                     <i class="fa-solid fa-envelope"></i>
-                    <input type="email" placeholder="email">
+                    <input type="email" placeholder="email" id="email">
                 </div>
                 <div class="input-filed">
                     <i class="fa-solid fa-envelope"></i>
-                    <input type="email" placeholder="Comentarios">
-                </div>
-                
+                    <input type="email" placeholder="Comentarios" id="Comentarios">
+            </div> 
+            <div class="input-filed ">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="ONG"placeholder="Fundacion/ONG" id="FundacionONG">
+
 
             </div>
             <div class="btn-field">
@@ -58,7 +61,18 @@
 
             </div>
 
-        </form> 
+                
+
+            
+                
+
+            </div>
+
+
+         
+
+        </form>
+           
         </div>
     </div>
     

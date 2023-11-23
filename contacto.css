@@ -69,7 +69,7 @@ main {
     width: 100%;
     max-width: 450px;
     background-color: #2c2f35;
-    padding: 50px 60px 70px;
+    padding: 50px 60px 160px;
     text-align: center;
     border-radius: 25px;
 
@@ -110,11 +110,11 @@ input {
     border: 0;
     outline: none;
     padding: 18px 15px;
-    color: #1e1e1e;
+    color:#FFFF;
 }
 
 input::placeholder {
-    color: rgb(255, 255, 255)
+    color: #333333;
 
 }
 
@@ -149,6 +149,8 @@ form p {
     outline: 0;
     cursor: pointer;
     transition: background 01s;
+    
+
 
 
 }
